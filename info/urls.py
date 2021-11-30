@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from . import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    #path('admin/', admin.site.urls),
+# path('nico/', views.NICO, name = 'primera_vista')
+# si viene el la url de arriba, si viene url nico, mostra la vista views
+#
+    path('nico/', views.NICO, name = 'primera_vista')
 ]
