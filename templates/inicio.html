@@ -4,11 +4,11 @@
 {% block contenido %}
 
 	
-	HOLA SOY MI PRIMERA PAGINA
+	<p class="texto-cont"> HOLA SOY MI PRIMERA PAGINA </p>
 
 	<br>
 	<br>
 
-	<a href="(% url 'productos:listar_productos' %)"> IR A PRODUCTOS</a>
+	<a href="{% url 'productos:listar_productos' %}"> IR A PRODUCTOS</a>
 
 {$ endblock contenido %}
